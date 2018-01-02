@@ -1,6 +1,6 @@
 SUMMARY = "Configuration file to enable ethernet connection with networkd"
 LICENSE = "MIT"
-LIC_FILES_CHKSUM = "file://${COREBASE}/meta-witekio/COPYING.MIT;md5=3da9cfbcb788c80a0384361b4de20420"
+LIC_FILES_CHKSUM = "file://${COREBASE}/meta-mb/COPYING.MIT;md5=3da9cfbcb788c80a0384361b4de20420"
 
 FILESEXTRAPATHS_prepend := "${THISDIR}/conf-file:"
 

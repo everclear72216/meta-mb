@@ -15,6 +15,7 @@ MB_BASE = "\
 
 MB_ETH = "\
     iproute2 \
+    ethernet-config-dhcp \
     "
 
 MB_SGX = "\
