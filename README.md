@@ -17,9 +17,9 @@ What will you get?
 - A linux kernel that is SGX enabled (i.e. makes use of the hardware graphics
 accelerator embedded in the TI AM3358 microcontroller).
 - A root filesystem providing:
-..- Qt5.9.3
-..- SSH + SFTP
-..- Busybox tools
+  - Qt5.9.3
+  - SSH + SFTP
+  - Busybox tools
 
 There will be no X11 installed on the system!
 
