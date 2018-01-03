@@ -1,0 +1,17 @@
+# POKY_BBLAYERS_CONF_VERSION is increased each time build/conf/bblayers.conf
+# changes incompatibly
+POKY_BBLAYERS_CONF_VERSION = "2"
+
+BBPATH = "${TOPDIR}"
+BBFILES ?= ""
+
+BBLAYERS ?= " \
+  ${HOME}/projects/opensource/BeagleBone/poky-rocko/meta \
+  ${HOME}/projects/opensource/BeagleBone/poky-rocko/meta-mb \
+  ${HOME}/projects/opensource/BeagleBone/poky-rocko/meta-ti \
+  ${HOME}/projects/opensource/BeagleBone/poky-rocko/meta-qt5 \
+  ${HOME}/projects/opensource/BeagleBone/poky-rocko/meta-poky \
+  ${HOME}/projects/opensource/BeagleBone/poky-rocko/meta-openembedded/meta-oe \
+  ${HOME}/projects/opensource/BeagleBone/poky-rocko/meta-openembedded/meta-python \
+  ${HOME}/projects/opensource/BeagleBone/poky-rocko/meta-openembedded/meta-networking \
+  "
