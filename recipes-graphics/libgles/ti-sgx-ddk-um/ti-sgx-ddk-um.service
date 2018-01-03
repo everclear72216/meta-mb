@@ -1,0 +1,11 @@
+[Unit]
+Description=SGX User Mode Service
+After=network-online.target
+
+[Service]
+RemainAfterExit=yes
+ExecStop=+/etc/init.d/rc.pvr stop
+ExecStart=+/etc/init.d/rc.pvr start
+
+[Install]
+WantedBy=multi-user.target

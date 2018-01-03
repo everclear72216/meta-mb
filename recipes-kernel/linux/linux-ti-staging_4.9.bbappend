@@ -15,3 +15,11 @@ KERNEL_DEVICETREE_beaglebone-mb-board = "am335x-boneblack.dtb \
     bbb-4dcape43t.dtb \
     bbb-4dcape70t.dtb \
     "
+
+KERNEL_DEFAULT_DEVICETREE ?= "bbb-4dcape70t.dtb"
+
+do_default_dtb_symlink() {
+    ln -sf ${KERNEL_DEFAULT_DEVICETREE} ${D}/${KERNEL_IMAGEDEST}/devicetree.dtb 
+}
+
+do_install[postfuncs] += "do_default_dtb_symlink"
