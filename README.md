@@ -143,7 +143,7 @@ $ sudo cp MLO u-boot.img /media/<username>/boot/
 ### 5.2 Write the Root File System to the SD-Card
 
 You will need to determine which entry in the /dev filesystem corresponds to the
-root file system partition on the SD-Card. I usally do a `du -h` to see which
+root file system partition on the SD-Card. I usally do a `df -h` to see which
 device corresponds to the `boot` partition. If the device is `/dev/sd<x>1` the
 root file system partition will be `/dev/sd<x>2`. So to write the root file
 system you need to:
