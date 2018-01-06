@@ -17,7 +17,8 @@ MB_QT_SERIALPORT = "\
 
 MB_QT_DECLARATIVE = "\
     qtdeclarative \
-    qtdeclarative-qmlplugins \
+    qtquickcontrols \
+    qtquickcontrols2 \
     "
 
 MB_QT_QUICK = "\
@@ -35,6 +36,7 @@ MB_QT_XMLPATTERNS = "\
     "
 
 MB_QT_QMLPLUGINS = "\
+    qtdeclarative-qmlplugins \
     qtquickcontrols-qmlplugins \
     qtquickcontrols2-qmlplugins \
     qtgraphicaleffects-qmlplugins \
