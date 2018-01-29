@@ -1,6 +1,6 @@
 
-from config import key_prefix
-from component import Component
+from prodbundle.config import key_prefix
+from prodbundle.component import Component
 
 class Bundle(object):
 
@@ -13,7 +13,7 @@ class Bundle(object):
 
     def __init__(self, datastore):
         self._systemname = str(datastore.getVar(self.__sysname_key))
-        if len(self._sysname) is 0:
+        if len(self._systemname) is 0:
             raise Exception('No system name specified.')
 
         self._sysvariants = str(datastore.getVar(self.__sysvariants_key))
@@ -31,3 +31,11 @@ class Bundle(object):
 
             self._components.append(Component(datastore, component))
 
+    def register_dependencies(self, datastore):
+        for component in self._components:
+            component.register_dependencies(datastore)
+
+    def populate_bundle(self, datastore):
+        for component in self._components:
+            component.populate_bundle(datastore)
+            

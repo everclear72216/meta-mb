@@ -1,6 +1,7 @@
+import os
 
-from config import key_prefix
-from artifact import Artifact
+from prodbundle.config import key_prefix
+from prodbundle.artifact import Artifact
 
 class Component(object):
 
@@ -29,4 +30,22 @@ class Component(object):
                 continue
 
             self._artifacts.append(Artifact(datastore, artifact))
+
+    def register_dependencies(self, datastore):
+        for artifact in self._artifacts:
+            artifact.register_dependencies(datastore)
+
+    def populate_bundle(self, datastore):
+        srcdir = datastore.getVar('S', expand=True) or ''
+        if len(srcdir) is 0:
+            raise Exception('No source directory specified.')
+
+        bundledir = '%s/%s' % (srcdir, self._name)
+        try:
+            os.makedirs(bundledir)
+        except OSError as error:
+            pass
+        
+        for artifact in self._artifacts:
+            artifact.populate_bundle(datastore, bundledir)
 

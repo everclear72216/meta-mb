@@ -12,7 +12,7 @@ PRODBUNDLE_ARTIFACTS_hmi = "rootfs"
 PRODBUNDLE_CONNECTION_hmi = "userdefined"
 
 # the rootfs image to be bundled
-PRODBUNDLE_ARTIFACT_rootfs = "mb-bbb-image-base"
+PRODBUNDLE_ARTIFACT_rootfs = "mb-bbb-image-qt"
 PRODBUNDLE_ARTIFACT_rootfs[format] = "bin"
 PRODBUNDLE_ARTIFACT_rootfs[downgrade] = "yes"
 PRODBUNDLE_ARTIFACT_rootfs[type] = "diskimage"

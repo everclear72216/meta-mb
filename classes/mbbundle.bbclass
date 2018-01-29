@@ -28,5 +28,28 @@ python __anonymous() {
     from prodbundle.bundle import Bundle
 
     bundle = Bundle(d) 
+    bundle.register_dependencies(d)
 }
 
+S = "${WORKDIR}/bundle"
+
+python do_populate_bundle() {
+    from prodbundle.bundle import Bundle
+
+    bundle = Bundle(d)
+    bundle.populate_bundle(d)
+}
+
+addtask populate_bundle after do_unpack before do_build
+
+do_create_manifest() {
+}
+
+addtask create_manifest after do_configure before do_build
+
+inherit deploy
+
+do_deploy() {
+}
+
+addtask deploy after do_create_manifest before do_build
