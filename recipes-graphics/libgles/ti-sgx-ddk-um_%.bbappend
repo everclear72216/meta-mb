@@ -9,6 +9,7 @@ SYSTEMD_AUTO_ENABLE := "enable"
 
 SRC_URI += " \
     file://${PN}.service \
+    file://0001-change-default-color-format-rgb565.patch \
     "
 
 do_install_usermode_service() {

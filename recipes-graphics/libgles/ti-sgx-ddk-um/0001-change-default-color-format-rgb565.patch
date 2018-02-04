@@ -1,0 +1,8 @@
+diff --git a/targetfs/ti335x/etc/powervr.ini b/targetfs/ti335x/etc/powervr.ini
+index 29e36ab..284227c 100644
+--- a/targetfs/ti335x/etc/powervr.ini
++++ b/targetfs/ti335x/etc/powervr.ini
+@@ -1,2 +1,2 @@
+ [default]
+-#WindowSystem=libpvrws_WAYLAND.so
++DefaultPixelFormat=RGB565
