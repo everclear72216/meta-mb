@@ -17,3 +17,4 @@ do_install_usermode_service() {
 }
 
 do_install[postfuncs] += "do_install_usermode_service"
+
