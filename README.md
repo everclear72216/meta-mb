@@ -36,7 +36,7 @@ using your favourite package manager.
 For debian you would do:
 
 ```shell
-$ sudo apt-get install gaw wget git-core diffstat unzip build-essential chrpath \
+$ sudo apt-get install gawk wget git-core diffstat unzip build-essential chrpath \
 libsdl1.2-dev xterm curl texinfo lzop
 ```
 The list may not be complete so if the build fails check the logs pointed to in
