@@ -55,6 +55,9 @@ $ git clone -b rocko git://git.yoctoproject.org/poky.git <workingdir>
 $ cd <workingdir>
 $ git clone -b rocko git://git.openembedded.org/meta-openembedded
 $ git clone -b rocko git://git.yoctoproject.org/meta-ti
+$ cd meta-ti
+$ git checkout b8c6a1426e6301df1ab17de635e26cbb9e0f9949
+$ cd ..
 $ git clone -b rocko https://github.com/meta-qt5/meta-qt5
 $ git clone -b rocko https://github.com/everclear72216/meta-mb.git
 ```
