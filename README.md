@@ -16,7 +16,7 @@ What will you get?
 - A bootloader (u-boot) configured to load a kernel that supports the 4DCAPE-70T
 - A linux kernel that is SGX enabled (uses the AM3358's graphics accelerator).
 - A root filesystem providing:
-  - Qt5.9.3
+  - Qt5.9.4
   - SSH + SFTP
   - Busybox tools
 
