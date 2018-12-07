@@ -107,7 +107,7 @@ so you can create apps for the BeagleBone on your host machine. The following
 command will build the SDK for you.
 
 ```shell
-$ bitbake meta-toolchain-qt5
+$ bitbake mb-bbb-image-qt -c pupulate_sdk
 ```
 
 5 Create an SD-Card Image for the BeageBone Black
